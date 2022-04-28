@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, #a8ff78, #78ffd6);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.fa {
+  font-size: 2rem;
+}
+
+/* ---------------- IIIIIIIIII ---------------- */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: auto;
+  width: 90%;
+  max-width: 700px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  padding: 1rem;
+
+  background-image: linear-gradient(to right, #a8ff78, #78ffd6);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 50px 50px;
+  font-style: italic;
+  text-align: center;
+
+  button {
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.ten {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+}
+/* --------------------- C -------------------- */
+.block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 0.05rem;
+  column-gap: 0.1rem;
+
+  margin: 2rem 0;
+  background: transparent;
+  position: relative;
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50px;
+
+    display: grid;
+    place-items: center;
+    place-content: center;
+    // pointer-events: none;
+    .fa-o {
+      font-size: 5rem;
+      color: red;
+    }
+
+    .fa-x {
+      font-size: 5rem;
+      color: blue;
+    }
+  }
+
+  .nodi {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.499);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    pointer-events: none;
+  }
+}

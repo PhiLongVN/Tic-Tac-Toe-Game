@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-gradient(linear, right top, left top, from(#a8ff78), to(#78ffd6));
+  background-image: linear-gradient(to left, #a8ff78, #78ffd6);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.fa {
+  font-size: 2rem;
+}
+
+/* ---------------- IIIIIIIIII ---------------- */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  width: 90%;
+  max-width: 700px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#a8ff78), to(#78ffd6));
+  background-image: linear-gradient(to right, #a8ff78, #78ffd6);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 50px 50px;
+  font-style: italic;
+  text-align: center;
+}
+
+.title button {
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.title button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.ten {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* --------------------- C -------------------- */
+.block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  row-gap: 0.05rem;
+  -webkit-column-gap: 0.1rem;
+          column-gap: 0.1rem;
+  margin: 2rem 0;
+  background: transparent;
+  position: relative;
+}
+
+.block .cell {
+  width: 100px;
+  height: 100px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.block .cell .fa-o {
+  font-size: 5rem;
+  color: red;
+}
+
+.block .cell .fa-x {
+  font-size: 5rem;
+  color: blue;
+}
+
+.block .nodi {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.499);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  pointer-events: none;
+}
+/*# sourceMappingURL=main.css.map */
